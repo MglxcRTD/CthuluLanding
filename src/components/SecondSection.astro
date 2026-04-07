@@ -1,0 +1,295 @@
+---
+
+---
+
+<section
+    class="second-section relative py-24 md:py-44 px-6 md:px-16 overflow-hidden bg-transparent"
+>
+    <!-- Fondo atmosférico -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+        <!-- Textura de profundidad submarina -->
+        <div
+            class="absolute top-0 left-0 w-full h-full opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"
+        >
+        </div>
+        <!-- Luces bioluminiscentes -->
+        <div
+            class="absolute top-[10%] left-[-20%] w-[70%] h-[70%] bg-[#02735e]/12 blur-[180px] rounded-full animate-breathe"
+        >
+        </div>
+        <div
+            class="absolute bottom-[-20%] right-[-10%] w-[55%] h-[55%] bg-[#84d9d0]/8 blur-[150px] rounded-full animate-breathe-delay"
+        >
+        </div>
+        <!-- Líneas de profundidad -->
+        <div
+            class="absolute left-0 top-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#84d9d0]/10 to-transparent"
+        >
+        </div>
+        <div
+            class="absolute right-0 top-0 h-full w-[1px] bg-gradient-to-b from-transparent via-[#84d9d0]/10 to-transparent"
+        >
+        </div>
+        <!-- Vignette -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_center,transparent_30%,rgba(0,13,12,0.8)_100%)]"
+        >
+        </div>
+        <!-- Scanlines -->
+        <div
+            class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,13,12,0.04)_50%)] bg-[length:100%_4px] opacity-20"
+        >
+        </div>
+    </div>
+
+    <!-- Partículas flotantes (CSS puro) -->
+    <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+    </div>
+
+    <div
+        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 lg:gap-28 items-center relative z-10"
+    >
+        <!-- Texto izquierda -->
+        <div class="flex flex-col space-y-8 order-2 md:order-1">
+            
+
+            <h2
+                class="text-5xl md:text-6xl lg:text-7xl font-black uppercase leading-[0.88] text-white section-title"
+            >
+                El Horror<br />
+                <span
+                    class="text-transparent bg-clip-text bg-gradient-to-br from-[#84d9d0] to-[#02735e]"
+                >
+                    Ancestral
+                </span>
+            </h2>
+
+            <!-- Línea divisora ornamental -->
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-12 h-[1px] bg-gradient-to-r from-[#84d9d0]/60 to-transparent"
+                >
+                </div>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <circle
+                        cx="6"
+                        cy="6"
+                        r="5"
+                        stroke="rgba(132,217,208,0.4)"
+                        stroke-width="1"></circle>
+                    <circle cx="6" cy="6" r="2" fill="rgba(132,217,208,0.4)"
+                    ></circle>
+                </svg>
+                <div
+                    class="w-full h-[1px] bg-gradient-to-r from-[#84d9d0]/20 to-transparent"
+                >
+                </div>
+            </div>
+
+            <p
+                class="text-[#84d9d0]/70 text-lg md:text-xl font-light leading-relaxed tracking-wide"
+            >
+                En las profundidades insondables del Océano Pacífico yace algo
+                que <span class="text-[#84d9d0] font-medium"
+                    >ninguna mente humana debería contemplar</span
+                >. Cthulhu lleva eones dormitando, sus sueños corrompiendo
+                lentamente la cordura de los mortales.
+            </p>
+
+            <p
+                class="text-[#84d9d0]/50 text-base md:text-lg font-light leading-relaxed"
+            >
+                La ciudad de R'lyeh emerge de las aguas, y con ella, la promesa
+                de una revelación que lo cambiará todo. <span
+                    class="text-[#d91414]/80 italic"
+                    >¿Estás preparado para lo que encontrarás?</span
+                >
+            </p>
+
+            <!-- Stats estilo diario de explorador -->
+            <div
+                class="grid grid-cols-2 gap-4 pt-4 border-t border-[#84d9d0]/10"
+            >
+            </div>
+        </div>
+
+        <!-- Imagen derecha -->
+        <div class="relative group order-1 md:order-2">
+            <!-- Halo exterior -->
+            <div
+                class="absolute -inset-8 bg-[#02735e]/10 blur-[60px] rounded-full opacity-60 group-hover:opacity-100 group-hover:bg-[#84d9d0]/10 transition-all duration-1000"
+            >
+            </div>
+            <!-- Marco tipo portilla -->
+            <div class="relative overflow-hidden">
+                <!-- Esquinas ornamentales -->
+                <div
+                    class="absolute top-0 left-0 w-10 h-10 border-t border-l border-[#84d9d0]/50 z-20"
+                >
+                </div>
+                <div
+                    class="absolute top-0 right-0 w-10 h-10 border-t border-r border-[#84d9d0]/50 z-20"
+                >
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 w-10 h-10 border-b border-l border-[#84d9d0]/50 z-20"
+                >
+                </div>
+                <div
+                    class="absolute bottom-0 right-0 w-10 h-10 border-b border-r border-[#84d9d0]/50 z-20"
+                >
+                </div>
+                <!-- Overlay de profundidad sobre imagen -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-tl from-[#000d0c]/40 to-transparent z-10 pointer-events-none"
+                >
+                </div>
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,13,12,0.04)_50%)] bg-[length:100%_3px] z-10 opacity-40 pointer-events-none"
+                >
+                </div>
+                <img
+                    src="/Cthulhu/Screenshot_5.jpg"
+                    alt="El horror ancestral"
+                    class="w-full h-auto object-cover transition-all duration-[1500ms] group-hover:scale-105 group-hover:brightness-110"
+                />
+                <!-- Glow en hover -->
+                <div
+                    class="absolute inset-0 shadow-[inset_0_0_80px_rgba(132,217,208,0)] group-hover:shadow-[inset_0_0_80px_rgba(132,217,208,0.08)] transition-all duration-1000 z-10 pointer-events-none"
+                >
+                </div>
+            </div>
+            <!-- Etiqueta de clasificación estilo BioShock -->
+        </div>
+    </div>
+
+    <!-- Botón Compra Ya -->
+    <div class="relative z-10 flex justify-center mt-20 md:mt-28">
+        <a href="#comprar" class="buy-btn group relative">
+            <div
+                class="absolute -inset-[1px] bg-gradient-to-r from-[#84d9d0]/0 via-[#84d9d0]/40 to-[#84d9d0]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <div
+                class="relative border border-[#84d9d0]/30 bg-[#000d0c]/80 backdrop-blur-sm px-12 py-4 group-hover:border-[#84d9d0]/60 transition-all duration-500 overflow-hidden"
+            >
+                <div
+                    class="absolute inset-0 bg-[#84d9d0]/0 group-hover:bg-[#84d9d0]/5 transition-all duration-500"
+                >
+                </div>
+                <div
+                    class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-[linear-gradient(transparent_50%,rgba(132,217,208,0.05)_50%)] bg-[length:100%_3px] animate-interference"
+                >
+                </div>
+                <span
+                    class="relative z-10 text-[#84d9d0]/60 group-hover:text-[#84d9d0] text-xs uppercase tracking-[0.5em] font-serif transition-all duration-300"
+                >
+                    ◈ Compra Ya ◈
+                </span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<style>
+    .section-title {
+        font-family: "Georgia", "Times New Roman", serif;
+        text-shadow: 0 0 80px rgba(132, 217, 208, 0.1);
+    }
+
+    @keyframes breathe {
+        0%,
+        100% {
+            opacity: 0.12;
+            transform: scale(1);
+        }
+        50% {
+            opacity: 0.22;
+            transform: scale(1.08);
+        }
+    }
+    .animate-breathe {
+        animation: breathe 12s ease-in-out infinite;
+    }
+    .animate-breathe-delay {
+        animation: breathe 15s ease-in-out infinite 3s;
+    }
+
+    /* Partículas bioluminiscentes */
+    .particle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(132, 217, 208, 0.6);
+        pointer-events: none;
+    }
+    .particle-1 {
+        width: 2px;
+        height: 2px;
+        top: 20%;
+        left: 10%;
+        animation: float-particle 18s infinite linear;
+    }
+    .particle-2 {
+        width: 3px;
+        height: 3px;
+        top: 60%;
+        left: 25%;
+        animation: float-particle 24s infinite linear 4s;
+    }
+    .particle-3 {
+        width: 2px;
+        height: 2px;
+        top: 40%;
+        left: 70%;
+        animation: float-particle 20s infinite linear 8s;
+    }
+    .particle-4 {
+        width: 1px;
+        height: 1px;
+        top: 80%;
+        left: 50%;
+        animation: float-particle 16s infinite linear 2s;
+    }
+    .particle-5 {
+        width: 2px;
+        height: 2px;
+        top: 15%;
+        left: 85%;
+        animation: float-particle 22s infinite linear 6s;
+        background: rgba(217, 20, 20, 0.5);
+    }
+
+    @keyframes float-particle {
+        0% {
+            transform: translateY(0) translateX(0);
+            opacity: 0;
+        }
+        10% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-120px) translateX(30px);
+            opacity: 0;
+        }
+    }
+
+    @keyframes interference {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 0 100%;
+        }
+    }
+    .animate-interference {
+        animation: interference 0.3s infinite linear;
+    }
+</style>

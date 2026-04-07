@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta extraída de tus assets: El Abismo */
+  --color-abyss-black: #000d0c;      /* Negro verdoso profundo */
+  --color-abyss-void: #012623;       /* Verde oscuro cianótico */
+  --color-abyss-teal: #02735e;       /* El tono de las luces marinas */
+  --color-abyss-light: #84d9d0;      /* Bioluminiscencia */
+  --color-abyss-alert: #d91414;      /* Rojo de peligro/sangre (Captura 4) */
+}
+
+:root {
+  /* Variables semánticas */
+  --color-primary: #02735e;
+  --color-secondary: #012623;
+  --color-accent: #84d9d0;
+  --color-action: #d91414;
+  --color-bg: #000d0c;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #e0f2f1; /* Un blanco azulado muy suave, no blanco puro */
+  font-family: 'Inter', system-ui, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Scrollbar personalizada como si fuera agua/abismo */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-abyss-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-abyss-teal);
+  border-radius: 10px;
+}

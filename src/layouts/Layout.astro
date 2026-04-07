@@ -1,0 +1,60 @@
+---
+import "../styles/global.css";
+// Puedes añadir una fuente más "antigua" o "perturbadora" si quieres, 
+// pero mantengamos Inter para legibilidad.
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cthulhu: The Cosmic Abyss | Official Site</title>
+  </head>
+  <body class="bg-abyss-black text-white antialiased selection:bg-abyss-teal selection:text-white">
+    
+    <!-- Fondo atmosférico global animado para secciones oscuras -->
+    <div class="fixed inset-0 z-0 pointer-events-none bg-abyss-black overflow-hidden">
+      <div class="absolute top-[-20%] left-[-10%] w-[70%] h-[70%] bg-abyss-teal/10 blur-[150px] rounded-full animate-deep-pulse"></div>
+      <div class="absolute bottom-[-20%] right-[-10%] w-[60%] h-[60%] bg-abyss-void/40 blur-[150px] rounded-full animate-deep-pulse" style="animation-delay: 3s;"></div>
+      <div class="absolute top-[40%] left-[60%] w-[40%] h-[40%] bg-abyss-light/5 blur-[120px] rounded-full animate-deep-pulse" style="animation-delay: 5s;"></div>
+    </div>
+
+    <div class="fixed inset-0 z-[100] pointer-events-none mix-blend-overlay opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+    
+    <div class="fixed inset-0 z-50 pointer-events-none shadow-[inset_0_0_200px_rgba(0,0,0,0.9)]"></div>
+
+    <main class="relative z-10 main-container">
+      <slot />
+    </main>
+
+  </body>
+</html>
+
+<style is:global>
+  .main-container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Eliminamos los bordes suavizados de las secciones de "Gear Club" */
+  /* El horror cósmico prefiere transiciones de niebla o cortes limpios */
+  section {
+    position: relative;
+    width: 100%;
+  }
+
+  /* Efecto de aberración cromática suave en títulos (opcional) */
+  .text-horror {
+    text-shadow: 2px 0 #d91414, -2px 0 #02735e;
+  }
+
+  /* Animación del fondo atmosférico global */
+  @keyframes deep-pulse {
+    0%, 100% { opacity: 0.3; transform: scale(1) translate(0px, 0px); }
+    50% { opacity: 0.7; transform: scale(1.1) translate(20px, -20px); }
+  }
+  .animate-deep-pulse {
+    animation: deep-pulse 20s infinite ease-in-out;
+  }
+</style>

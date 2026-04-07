@@ -1,0 +1,121 @@
+<section
+  class="relative h-screen w-full flex flex-col justify-between overflow-hidden bg-transparent"
+>
+  <div class="absolute inset-0 z-0 overflow-hidden">
+    <img
+      class="w-full h-full object-cover object-top animate-subtle-zoom opacity-80" 
+      src="/Cthulhu/Cthulhu_keyart_4k_3840x2160.jpg"
+      alt="Cthulhu: The Cosmic Abyss"
+      loading="eager"
+    />
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-abyss-black/40 z-0 pointer-events-none"
+    >
+    </div>
+  </div>
+
+  <div class="relative z-30 flex justify-end p-8 md:p-12">
+    <a
+      href="#comprar"
+      class="group relative px-6 py-2 transition-all duration-500"
+    >
+      <div class="absolute inset-0 bg-[#0a0a0a] border border-white/20 skew-x-12 group-hover:skew-x-0 transition-all duration-700 shadow-2xl"></div>
+      
+      <div class="absolute inset-0 opacity-0 group-hover:opacity-100 bg-abyss-alert/10 animate-glitch-fast pointer-events-none"></div>
+      
+      <span class="relative z-10 text-white/70 group-hover:text-abyss-alert text-[10px] font-serif uppercase tracking-[0.4em] transition-all duration-500">
+        Compra ya
+      </span>
+    </a>
+  </div>
+
+  <div class="relative z-30 flex flex-col items-center pb-24 md:pb-40">
+    
+    <a
+      href="#descubrir"
+      class="group relative px-10 py-6 flex flex-center justify-center cursor-pointer mt-16"
+    >
+      <div class="absolute inset-0 bg-[#080808] border border-white/10 shadow-[inset_0_0_20px_rgba(0,0,0,1)] transition-all duration-700 group-hover:border-abyss-teal/50">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay"></div>
+      </div>
+
+      <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div class="absolute inset-0 bg-abyss-teal/20 blur-[30px] animate-pulse"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(132,217,208,0.1)_50%)] bg-[length:100%_4px] animate-interference"></div>
+        <div class="absolute inset-0 bg-white/5 animate-flicker"></div>
+      </div>
+
+      <div class="relative z-20 flex flex-col items-center">
+        <span
+          class="text-white/20 group-hover:text-abyss-light text-2xl md:text-4xl font-serif tracking-[0.3em] uppercase transition-all duration-500 ease-in-out group-hover:animate-glitch-text"
+        >
+          Compra Ya
+        </span>
+        
+        <div class="w-0 group-hover:w-full h-[1px] bg-abyss-teal mt-2 transition-all duration-1000 opacity-0 group-hover:opacity-50"></div>
+      </div>
+
+      <div class="absolute -top-2 -left-2 w-6 h-6 border-t border-l border-white/10 group-hover:border-abyss-teal transition-all duration-500"></div>
+      <div class="absolute -bottom-2 -right-2 w-6 h-6 border-b border-r border-white/10 group-hover:border-abyss-teal transition-all duration-500"></div>
+    </a>
+  </div>
+</section>
+
+<style>
+  .animate-subtle-zoom {
+    animation: slowZoom 40s infinite alternate ease-in-out;
+  }
+
+  @keyframes slowZoom {
+    from { transform: scale(1.1); }
+    to { transform: scale(1.25); }
+  }
+
+  /* Interferencia de líneas de TV vieja / Sonar estropeado */
+  @keyframes interference {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+  }
+  .animate-interference {
+    animation: interference 0.2s infinite linear;
+  }
+
+  /* Parpadeo orgánico */
+  @keyframes flicker {
+    0%, 100% { opacity: 0; }
+    5%, 15%, 25% { opacity: 0.4; }
+    10%, 20% { opacity: 0.1; }
+  }
+  .animate-flicker {
+    animation: flicker 2s infinite;
+  }
+
+  /* Glitch sutil para el texto */
+  @keyframes glitch-text {
+    0% { transform: translate(0); text-shadow: 0 0 0 transparent; }
+    2% { transform: translate(-2px, 1px); text-shadow: 2px 0 rgba(132, 217, 208, 0.5); }
+    4% { transform: translate(2px, -1px); text-shadow: -2px 0 rgba(217, 20, 20, 0.3); }
+    6% { transform: translate(0); }
+    100% { transform: translate(0); }
+  }
+  .group-hover\:animate-glitch-text {
+    animation: glitch-text 4s infinite;
+  }
+
+  /* Glitch para el fondo del botón superior */
+  @keyframes glitch-fast {
+    0% { clip-path: inset(0 0 0 0); }
+    20% { clip-path: inset(20% 0 50% 0); }
+    40% { clip-path: inset(10% 0 80% 0); }
+    60% { clip-path: inset(60% 0 10% 0); }
+    80% { clip-path: inset(30% 0 40% 0); }
+    100% { clip-path: inset(0 0 0 0); }
+  }
+  .animate-glitch-fast {
+    animation: glitch-fast 0.5s infinite linear;
+  }
+
+  span {
+    font-family: 'Georgia', serif;
+  }
+</style>
