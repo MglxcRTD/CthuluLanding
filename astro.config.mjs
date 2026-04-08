@@ -7,5 +7,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: 'https://mglxcrtd.github.io',
-  base: '/Cthulhu',
+  base: '/CthulhuLanding',
 });
